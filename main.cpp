@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int d, a, b, maxArea;
+int d, a, b;
+double maxArea;
 string run;
 
 int main()
@@ -16,11 +17,12 @@ int main()
     cin>>d;
     //count the derivative to find "a "for the maximum area
     // b = d-2a;
+    //pochodna z pola
     // (a*(d-2a));
     // a*d-2a^2=>
     //d-4a=0
 
-    if (d>0){{
+    if (d>=3){{
     a=(d/4);
     b=(d-(2*a));
     maxArea =(a*b);
@@ -30,7 +32,7 @@ int main()
     cout<<"The optimal area of farm in square meters: "<<maxArea<<endl;
     }}
     else{
-        cout<<"The number cannot be negative!"<<endl;
+        cout<<"The number cannot be less than 3!"<<endl;
     }}
     else{
         cout<<"I see... you don't want to run an algorithm :("<<endl;
