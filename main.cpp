@@ -19,7 +19,8 @@ int main()
     // (a*(d-2a));
     // a*d-2a^2=>
     //d-4a=0
-    if (d>0){
+
+    if (d>0){{
     a=(d/4);
     b=(d-(2*a));
     maxArea =(a*b);
@@ -27,10 +28,13 @@ int main()
     cout<<"Optimal length of a segment: "<<a<<endl;
     cout<<"Optimal length of b segment: "<<b<<endl;
     cout<<"The optimal area of farm in square meters: "<<maxArea<<endl;
-    }
+    }}
     else{
-        cout<<"The number cannot be negative! Try again"<<endl;
+        cout<<"The number cannot be negative!"<<endl;
+    }}
+    else{
+        cout<<"I see... you don't want to run an algorithm :("<<endl;
     }
     return 0;
     }
-}
+
